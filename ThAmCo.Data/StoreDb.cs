@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 
-namespace Producks.Data
+namespace ThAmCo.Data
 {
     public class StoreDb : DbContext
     {
@@ -45,6 +45,6 @@ namespace Producks.Data
             });
         }
 
-        public DbSet<Producks.Data.Product> Product { get; set; }
+        public DbSet<ThAmCo.Data.Product> Product { get; set; }
     }
 }

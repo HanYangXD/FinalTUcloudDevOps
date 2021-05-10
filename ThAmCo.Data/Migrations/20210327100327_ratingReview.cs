@@ -1,6 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Producks.Data.Migrations
+namespace ThAmCo.Data.Migrations
 {
     public partial class ratingReview : Migration
     {

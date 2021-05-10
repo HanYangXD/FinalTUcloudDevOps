@@ -15,7 +15,7 @@
         "ASPNETCORE_ENVIRONMENT": "Development"
       }
     },
-    "Producks.Web": {
+    "ThAmCo.Web": {
       "commandName": "Project",
       "launchBrowser": true,
       "environmentVariables": {

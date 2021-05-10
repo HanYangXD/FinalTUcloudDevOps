@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc.Rendering;
-using Producks.Data;
+using ThAmCo.Data;
 using System.Collections.Generic;
 
 namespace ThAmCo.Web.Models

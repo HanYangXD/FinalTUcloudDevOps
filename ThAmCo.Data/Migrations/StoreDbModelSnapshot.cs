@@ -3,9 +3,9 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using Producks.Data;
+using ThAmCo.Data;
 
-namespace Producks.Data.Migrations
+namespace ThAmCo.Data.Migrations
 {
     [DbContext(typeof(StoreDb))]
     partial class StoreDbModelSnapshot : ModelSnapshot
@@ -18,7 +18,7 @@ namespace Producks.Data.Migrations
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
-            modelBuilder.Entity("Producks.Data.Brand", b =>
+            modelBuilder.Entity("ThAmCoWeb.Data.Brand", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -34,7 +34,7 @@ namespace Producks.Data.Migrations
                     b.ToTable("Brands");
                 });
 
-            modelBuilder.Entity("Producks.Data.Category", b =>
+            modelBuilder.Entity("ThAmCoWeb.Data.Category", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -53,7 +53,7 @@ namespace Producks.Data.Migrations
                     b.ToTable("Categories");
                 });
 
-            modelBuilder.Entity("Producks.Data.Product", b =>
+            modelBuilder.Entity("ThAmCoWeb.Data.Product", b =>
                 {
                     b.Property<int>("Id")
                         .ValueGeneratedOnAdd()
@@ -88,14 +88,14 @@ namespace Producks.Data.Migrations
                     b.ToTable("Product");
                 });
 
-            modelBuilder.Entity("Producks.Data.Product", b =>
+            modelBuilder.Entity("ThAmCoWeb.Data.Product", b =>
                 {
-                    b.HasOne("Producks.Data.Brand", "Brand")
+                    b.HasOne("ThAmCoWeb.Data.Brand", "Brand")
                         .WithMany()
                         .HasForeignKey("BrandId")
                         .OnDelete(DeleteBehavior.Cascade);
 
-                    b.HasOne("Producks.Data.Category", "Category")
+                    b.HasOne("ThAmCoWeb.Data.Category", "Category")
                         .WithMany()
                         .HasForeignKey("CategoryId")
                         .OnDelete(DeleteBehavior.Cascade);

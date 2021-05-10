@@ -1,4 +1,4 @@
-﻿namespace Producks.Data
+﻿namespace ThAmCo.Data
 {
     public class Category
     {

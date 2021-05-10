@@ -1,7 +1,7 @@
 ﻿using Microsoft.EntityFrameworkCore.Metadata;
 using Microsoft.EntityFrameworkCore.Migrations;
 
-namespace Producks.Data.Migrations
+namespace ThAmCo.Data.Migrations
 {
     public partial class InitialCreate : Migration
     {

@@ -1,6 +1,6 @@
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using Producks.Data;
+using ThAmCo.Data;
 using System.Linq;
 using System.Threading.Tasks;
 
