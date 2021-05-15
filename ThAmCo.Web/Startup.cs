@@ -88,14 +88,14 @@ namespace ThAmCo.Web
             JwtSecurityTokenHandler.DefaultInboundClaimTypeMap.Clear();
 
             services.AddAuthentication()
-                    .AddGoogle(options =>
-                    {
-                        IConfigurationSection googleAuthNSection = Configuration.GetSection("Authentication:Google");
-                        //options.ClientId = Configuration["Authentication:ClientId"];
-                        //options.ClientSecret = Configuration["Authentication:ClientSecret"];
-                        options.ClientId = "263764767918-fbjqlbef2p0nd74sb7af355rp3k8kkr6.apps.googleusercontent.com";
-                        options.ClientSecret = "pi1_xuVtgU1MlrErOVdHwRSy";
-                    })
+                    //.AddGoogle(options =>
+                    //{
+                    //    IConfigurationSection googleAuthNSection = Configuration.GetSection("Authentication:Google");
+                    //    //options.ClientId = Configuration["Authentication:ClientId"];
+                    //    //options.ClientSecret = Configuration["Authentication:ClientSecret"];
+                    //    options.ClientId = "263764767918-fbjqlbef2p0nd74sb7af355rp3k8kkr6.apps.googleusercontent.com";
+                    //    options.ClientSecret = "pi1_xuVtgU1MlrErOVdHwRSy";
+                    //})
                     .AddFacebook(options =>
                     {
                         IConfigurationSection facebookAuthNSection = Configuration.GetSection("Authentication:Facebook");

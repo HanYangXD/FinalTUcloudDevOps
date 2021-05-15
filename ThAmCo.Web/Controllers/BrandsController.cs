@@ -3,9 +3,11 @@ using Microsoft.EntityFrameworkCore;
 using ThAmCo.Data;
 using System.Linq;
 using System.Threading.Tasks;
+using Microsoft.AspNetCore.Authorization;
 
 namespace ThAmCo.Web.Controllers
 {
+    [Authorize(Roles = "Admin,Staff")]
     public class BrandsController : Controller
     {
         private readonly StoreDb _context;
@@ -16,12 +18,14 @@ namespace ThAmCo.Web.Controllers
         }
 
         // GET: Brands
+        [AllowAnonymous]
         public async Task<IActionResult> Index()
         {
             return View(await _context.Brands.ToListAsync());
         }
 
         // GET: Brands/Details/5
+        [AllowAnonymous]
         public async Task<IActionResult> Details(int? id)
         {
             if (id == null)

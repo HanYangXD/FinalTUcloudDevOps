@@ -11,7 +11,7 @@
     <hr />
     <dl class="row">
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.Name)
+            Product Name
         </dt>
         <dd class = "col-sm-10">
             @Html.DisplayFor(model => model.Name)
@@ -29,9 +29,9 @@
             @Html.DisplayFor(model => model.Price)
         </dd>
         <dt class = "col-sm-2">
-            @Html.DisplayNameFor(model => model.StockLevel)
+            Stock Level
         </dt>
-        <dd class = "col-sm-10">
+        <dd class="col-sm-10">
             @Html.DisplayFor(model => model.StockLevel)
         </dd>
         <dt class = "col-sm-2">
@@ -55,6 +55,9 @@
     </dl>
 </div>
 <div>
-    <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> |
+    @if (User.IsInRole("Admin") || User.IsInRole("Staff"))
+    {
+        <a asp-action="Edit" asp-route-id="@Model.Id">Edit</a> 
+    }
     <a asp-action="Index">Back to List</a>
 </div>
