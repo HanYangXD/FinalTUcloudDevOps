@@ -53,9 +53,6 @@ namespace ThAmCo.Web.Controllers
             };
 
             return View(productBrandVM);
-
-            //var storeDb = _context.Products.Include(p => p.Brand).Include(p => p.Category);
-            //return View(await storeDb.ToListAsync());
         }
 
 
