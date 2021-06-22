@@ -10,13 +10,11 @@ using ThAmCo.Auth.Models;
 namespace ThAmCo.Auth.Controllers
 {
     [ApiController]
-    //[Authorize(AuthenticationSchemes = "thamco_account_api")]
 
     [Authorize(Roles = "Admin")]
     public class UsersController : ControllerBase
     {
 
-        //private const string AuthSchemes = CookieAuthenticationDefaults.AuthenticationScheme + "," + JwtBearerDefaults.AuthenticationScheme;
         private UserManager<AppUser> UserManager { get; }
 
         public UsersController(UserManager<AppUser> userManager)

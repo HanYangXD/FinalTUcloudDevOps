@@ -18,20 +18,8 @@ namespace ThAmCo.Auth.Controllers
 
         private readonly UserManager<AppUser> _userManager;
         private readonly SignInManager<AppUser> _signInManager;
-        //private readonly IEmailSender _emailSender;
         private readonly ILogger _logger;
 
-        //public AccountController(
-        //    UserManager<AppUser> userManager,
-        //    SignInManager<AppUser> signInManager,
-        //    IEmailSender emailSender,
-        //    ILogger<AccountController> logger)
-        //{
-        //    _userManager = userManager;
-        //    _signInManager = signInManager;
-        //    _emailSender = emailSender;
-        //    _logger = logger;
-        //}
 
         public AccountController(
             UserManager<AppUser> userManager,

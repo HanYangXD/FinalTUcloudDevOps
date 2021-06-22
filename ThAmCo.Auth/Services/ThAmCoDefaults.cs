@@ -1,19 +1,4 @@
-﻿//using System;
-//using System.Collections.Generic;
-//using System.Linq;
-//using System.Threading.Tasks;
-
-//namespace ThAmCo.Auth.Services
-//{
-//    public class ThAmCoDefaults
-//    {
-//    }
-//}
-
-
-
-
-namespace ThAmCo.Auth.Services
+﻿namespace ThAmCo.Auth.Services
 {
     //
     // Summary:
